@@ -1,0 +1,10 @@
+# Library Book Tracker System 
+library = {} 
+def add_book(): 
+book_id = input("Enter Book ID: ") 
+name = input("Enter Book Name: ") 
+if book_id in library: 
+print("Book ID already exists!") 
+else: 
+library[book_id] = {"name": name, "available": True} 
+print("Book added successfully!") 
